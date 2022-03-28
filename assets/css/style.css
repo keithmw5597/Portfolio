@@ -1,0 +1,73 @@
+:root {
+    --primary-color: rgba(250, 198, 149, 0.7);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    background-image: url("../images/codeBg.jpeg");
+    background-size: cover;
+    background-position: 75%;
+    background-color: rgba(24, 49, 88, 0.85);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 0 0 15px rgba(4, 15, 14, 0.7);
+    background-blend-mode: darken;
+    background-blend-mode: multiply;
+    
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 75px;
+    color: var(--primary-color);
+    text-shadow: 5px 5px 15px rgba(4, 15, 14, 0.9);
+
+}
+.nav {
+    margin: 5px 0;
+}
+
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+
+.nav ul li {
+    padding: 15px 35px;
+    font-size: 30px;
+}
+
+.nav ul li a {
+    color: rgba(250, 198, 149, 0.7);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about-me {
+    display: flex;
+}
+
+footer {
+    display: flex;
+    background-image: url("../images/codeBg.jpeg");
+    background-size: cover;
+    background-position: 75%;
+    background-color: rgba(24, 49, 88, 0.85);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 0 0 15px rgba(4, 15, 14, 0.7);
+    background-blend-mode: darken;
+    background-blend-mode: multiply;
+}
+
+footer h2 {
+    color: var(--primary-color);
+}
