@@ -9,12 +9,14 @@
 }
 header {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
     background-image: url("../images/codeBg.jpeg");
     background-size: cover;
     background-position: 75%;
     background-color: rgba(24, 49, 88, 0.85);
-    justify-content: space-between;
-    flex-wrap: wrap;
+ 
     box-shadow: 0 0 15px rgba(4, 15, 14, 0.7);
     background-blend-mode: darken;
     background-blend-mode: multiply;
@@ -22,6 +24,7 @@ header {
 }
 
 header h1 {
+    padding: 25px;
     font-weight: bold;
     font-size: 75px;
     color: var(--primary-color);
@@ -51,23 +54,105 @@ header h1 {
     font-weight: bold;
 }
 
+
 .about-me {
+    padding: 50px;
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url("../images/cpuBg.jpg");
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-color: rgba(231, 231, 231, 0.349);
 }
+
+.about {
+    width: 50%;
+}
+.about img{  
+    width: 90%;
+    min-width: 400px;
+}
+.about-text {
+    width: 50%;
+}
+
+.about-me h2 {
+    padding: 65px;
+    font-size: 55px;
+    font-weight: bold;
+    color: rgba(12, 6, 47, 0.84);
+    text-shadow: 0 0 15px rgb(249 249 249 / 85%);
+}
+
+.about-text p {
+    padding: 40px;
+    width: 100%;
+    font-size: 45px;
+    text-shadow: 0 0 15px rgb(249 249 249 / 85%);
+}
+
+.body-of-work {
+    display: flex;  
+    flex-wrap: wrap;
+    background-image: url("../images/texture.jpg");
+    background-blend-mode: lighten;
+    background-color: rgba(255, 253, 234, 0.718); 
+}
+
+.body-of-work h2 {
+    padding: 45px;
+    font-size: 55px;
+    font-weight: bold;
+    color: rgba(2, 19, 46, 0.95);
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around; 
+}
+
+.project {
+    width: 40%;
+    min-width: 550px;
+    margin: 40px;
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.841);
+    border-radius: 16px;
+    border: 5px solid rgba(2, 19, 46, 0.95);
+}
+.project p {
+    font-size: 25px;
+    color: rgb(184 225 255 / 77%);
+    padding: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.body-of-work img {
+    max-width: 100%;
+    overflow: hidden;
+    text-align: center; 
+}
+
 
 footer {
     display: flex;
+    background-color: rgba(24, 49, 88, 0.85);
     background-image: url("../images/codeBg.jpeg");
+    background-blend-mode: darken;
+    background-blend-mode: multiply;
     background-size: cover;
     background-position: 75%;
-    background-color: rgba(24, 49, 88, 0.85);
     justify-content: space-between;
     flex-wrap: wrap;
     box-shadow: 0 0 15px rgba(4, 15, 14, 0.7);
-    background-blend-mode: darken;
-    background-blend-mode: multiply;
-}
+} 
 
 footer h2 {
+    padding: 35px;
+    font-size: 45px;
     color: var(--primary-color);
 }
