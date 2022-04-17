@@ -16,7 +16,6 @@ header {
     background-size: cover;
     background-position: 75%;
     background-color: rgba(24, 49, 88, 0.85);
- 
     box-shadow: 0 0 15px rgba(4, 15, 14, 0.7);
     background-blend-mode: darken;
     background-blend-mode: multiply;
@@ -79,8 +78,8 @@ header h1 {
 }
 
 .about-me h2 {
-    padding: 65px;
-    font-size: 55px;
+    padding: 45px;
+    font-size: 85px;
     font-weight: bold;
     color: rgba(12, 6, 47, 0.84);
     text-shadow: 0 0 15px rgb(249 249 249 / 85%);
@@ -89,7 +88,7 @@ header h1 {
 .about-text p {
     padding: 40px;
     width: 100%;
-    font-size: 45px;
+    font-size: 65px;
     text-shadow: 0 0 15px rgb(249 249 249 / 85%);
 }
 
@@ -107,7 +106,24 @@ header h1 {
     font-weight: bold;
     color: rgba(2, 19, 46, 0.95);
 }
-
+.project-1st {
+    min-width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.841);
+    border-radius: 16px;
+    border: 5px solid rgba(2, 19, 46, 0.95); 
+}
+.project-1st p {
+    font-size: 25px;
+    color: rgb(184 225 255 / 77%);
+    padding: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
 .projects {
     display: flex;
     flex-wrap: wrap;
@@ -119,7 +135,7 @@ header h1 {
     width: 40%;
     min-width: 550px;
     margin: 40px;
-    flex: 1;
+    flex: 2;
     background-color: rgba(0, 0, 0, 0.841);
     border-radius: 16px;
     border: 5px solid rgba(2, 19, 46, 0.95);
@@ -131,6 +147,15 @@ header h1 {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
+
+.project :hover {
+    
+    transition: all .2s ease-in-out; 
+    
+    transform: scale(1.1); 
+   
+}
+
 .body-of-work img {
     max-width: 100%;
     overflow: hidden;
@@ -156,3 +181,24 @@ footer h2 {
     font-size: 45px;
     color: var(--primary-color);
 }
+
+@media screen and (max-width: 600px) {
+    .about-me {
+        width: 100%;
+        display: block;
+        flex-direction: column;  
+    };
+    .about-text {
+        width: 100%;
+    };
+    .about-text p {
+        padding: 15px;
+        width: 100%;
+        font-size: 45px;
+        text-shadow: 0 0 15px rgb(249 249 249 / 85%);
+    };
+    .about img{  
+        width: 100%;
+    };
+    
+};
