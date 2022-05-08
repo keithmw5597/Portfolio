@@ -131,6 +131,7 @@ header h1 {
 }
 
 .project {
+    min-width: 40%;
     width: 40%;
     margin: 40px;
     flex: 2;
@@ -235,7 +236,7 @@ footer h2 {
         margin: 5%;
         display: block;
         flex-wrap: wrap;
-        width: 95%;
+        width: 75%;
         justify-content: space-around;
         flex: 1;
         background-color: rgba(0, 0, 0, 0.841);
